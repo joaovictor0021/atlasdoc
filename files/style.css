@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85%;
+    padding: 1rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 7.5%;
+    z-index: 1;
+    transition: .3s ease-in-out;
+}
+
+.header.sticky {
+    box-shadow:  0 .45rem .6rem #00000057;
+}
+
+.logo {
+    position: relative;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #580092;
+}
+
+form input {
+    width: 25rem;
+    height: 2.2rem;
+    padding: 0 1rem;
+    border: 2px solid #320053;
+    border-radius: .6rem;
+    font-weight: 500;
+    color: #320053;
+    outline: none;
+}
+
+form input::placeholder {
+    color: #580092;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    background: #580092;
+    min-height: 100vh;
+}
+
+.main h1 {
+    font-size: 3.7rem;
+    font-weight: 600;
+    color: #580092;
+    background: #fff;
+    position: relative;
+    width: 85%;
+    margin-top: 3rem;
+    padding: 5rem 0 0 0;
+    text-align: center;
+}
+
+
+.main ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    
+}
+
+.content {
+    position: relative;
+    padding: 3rem 7rem 5rem 7rem;
+    background: #fff;
+    height: auto;
+    width: 85%;
+}
+
+.content ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.filter_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 5rem 0;
+}
+
+.filter_buttons button {
+    padding: .5rem 2.5rem;
+    background: #580092;
+    color: #fff;
+    border: 2px solid #580092;
+    border-radius: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: .3s ease-in-out;
+}
+
+button.active {
+    background: transparent;
+    color: #580092;
+    scale: 1.02;
+    box-shadow: 0 .3rem .7rem #0000008d;
+}
+
+.filter_buttons button:hover {
+    background: transparent;
+    color: #580092;
+    scale: 1.02;
+    box-shadow: 0 .3rem .7rem #0000008d;
+    transition: .3s ease-in-out;;
+}
+
+
+.btn-1,
+.btn-2 {
+    display: flex;
+    gap: 1rem;
+}
+
+.filterable_cards  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card.hide {
+    display: none;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 23rem;
+    height: auto;
+    border: 2px solid #580092;
+    border-radius: .9rem;
+    padding: .5rem;
+    margin: 1rem;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 11rem;
+    background: #580092;
+    border: 2px solid #580092;
+    border-radius: .9rem;
+    transition: .4s ease-in-out;
+}
+
+.icon i {
+    display: flex;
+    align-items: center;
+    font-size: 9rem;
+    transition: .3s ease-in-out;
+}
+
+.icon:hover i{
+    scale: 1.08;
+    transition: .3s ease-in-out;
+}
+
+.icon img {
+    height: 8rem;
+    transition: .3s ease-in-out;
+}
+
+.icon:hover img{
+    scale: 1.08;
+    transition: .3s ease-in-out;
+}
+
+.icon svg {
+    height: 8rem;
+    transition: .3s ease-in-out;
+}
+
+.icon:hover svg{
+    scale: 1.08;
+    transition: .3s ease-in-out;
+}
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+
+.card-content h4 {
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #580092;
+    text-align: center;
+    width: 10rem;
+    line-height: 1.2rem;
+}
+
+.card-content p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #580092;
+    margin-top: .4rem;
+}
+
+.card-content a {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    background: #580092;
+    border: 2px solid #580092;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    padding: .5rem 1.3rem;
+    transition: .3s ease-in-out;
+}
+
+.card-content a:hover {
+    color: #580092;
+    background: #fff;
+    box-shadow:  0 .45rem .6rem #00000057;
+}
+
+.txtCentralizado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 17.5rem;
+}
